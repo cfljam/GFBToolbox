@@ -76,7 +76,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 ##regarding permalink to raw file
 
   config.vm.provision "shell",
-    #inline: "sudo apt-get install ipython"
-    #inline: "sudo apt-get -y install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose"
     path: "https://gist.githubusercontent.com/cfljam/1f4a8cfcb522eab3433d/raw"
+  config.vm.provision "shell", inline: "ipython notebook --ip=0.0.0.0 &"
+  
 end
