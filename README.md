@@ -12,7 +12,7 @@ Currently just dependencies for marker design and iPython
 To Install
 ----------
 
-1.  install virtualbox https://www.virtualbox.org/
+* install virtualbox https://www.virtualbox.org/
 * install vagrant https://www.vagrantup.com/
 * install Git http://git-scm.com/downloads
 * check out https://github.com/cfljam/GFBToolbox
@@ -34,3 +34,4 @@ iPython notebooks on your host machine at http://localhost:8888/
 ```
 vagrant ssh
 ```
+* Try out this notebook https://gist.github.com/65350c4fdfe261ab9764
