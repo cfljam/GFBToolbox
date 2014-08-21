@@ -76,7 +76,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 ##regarding permalink to raw file
 
   config.vm.provision "shell",
-    path: "https://gist.githubusercontent.com/cfljam/1f4a8cfcb522eab3433d/raw"
+    #path: "https://gist.githubusercontent.com/cfljam/1f4a8cfcb522eab3433d/raw"
+    path:"./provision/init.sh"
   config.vm.provision "shell", inline: "ipython notebook --ip=0.0.0.0 &"
-  
+
 end
