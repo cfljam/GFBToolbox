@@ -16,3 +16,6 @@ sudo gem install gist
 ###Screen config
 sudo apt-get -y install screen
 curl -o ~/.screenrc https://gist.githubusercontent.com/cfljam/610e9fe0a8ca23e80199/raw
+
+### R base
+sudo apt-get -y install r-base-core
