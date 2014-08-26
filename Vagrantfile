@@ -39,7 +39,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder "../../data", "/vagrant_data"
+  config.vm.synced_folder "../data", "/vagrant_data",create: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -78,6 +78,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell",
     #path: "https://gist.githubusercontent.com/cfljam/1f4a8cfcb522eab3433d/raw"
     path:"./provision/provision.sh"
-  config.vm.provision "shell", inline: "ipython notebook --ip=0.0.0.0 &"
+end
 
+### Start ipython server
+  
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|  
+  config.vm.provision "shell", inline: "ipython notebook --ip=0.0.0.0 ",
+  run: "always"
+  
 end
