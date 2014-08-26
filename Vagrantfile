@@ -81,10 +81,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 end
 
 ### Start ipython server
-  
-Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|  
-  config.vm.provision "shell", 
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.provision "shell",
   inline: "ipython notebook --ip=0.0.0.0 &",
   run: "always"
-  
+
 end

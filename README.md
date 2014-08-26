@@ -13,6 +13,7 @@ To Install
 ----------
 
 * install virtualbox https://www.virtualbox.org/
+  **NOTE** Tested in   VirtualBox 4.3.12. 
 * install vagrant https://www.vagrantup.com/
 * install Git http://git-scm.com/downloads
 * check out https://github.com/cfljam/GFBToolbox
