@@ -13,8 +13,11 @@ To Install
 ----------
 
 * install virtualbox https://www.virtualbox.org/
-  **NOTE** Tested in   VirtualBox 4.3.12. 
+  **NOTE** Tested in   VirtualBox 4.3.12.
+* If you are behind a corporate firewall, set the default proxy for virtualbox
+  i.e. file-> preferences->proxy
 * install vagrant https://www.vagrantup.com/
+* behind a firewall see https://gist.github.com/cfljam/298d5a91abbd9f9c971f 
 * install Git http://git-scm.com/downloads
 * check out https://github.com/cfljam/GFBToolbox
 ```
