@@ -9,6 +9,8 @@ https://gist.githubusercontent.com/cfljam/1f4a8cfcb522eab3433d/raw
 
 Currently just dependencies for marker design and iPython
 
+For a more user-friendly Docker option see https://github.com/cfljam/socker
+
 To Install
 ----------
 
